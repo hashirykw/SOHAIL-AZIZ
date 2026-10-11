@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chemistry Toolkit — periodic table, Mr calculator, mole &amp; pH calculators | SAZ</title>
+  <meta name="description" content="Free A Level chemistry toolkit from Sir Suhail Aziz (SAZ): interactive periodic table, electronic configurations for atoms and ions, Mr calculator with % by mass, and calculators for moles, solutions, pV = nRT, pH and electrolysis.">
+  <meta name="theme-color" content="#f26a21">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chemistry Toolkit — Sir Suhail Aziz (SAZ)">
+  <meta property="og:description" content="Periodic table, electronic configurations, Mr and mole calculators for A Level Chemistry 9701.">
+  <meta property="og:image" content="images/share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@62..125,400..800&family=Kalam:wght@700&display=swap">
+  <script>try{var t=localStorage.getItem("saz.theme");if(t)document.documentElement.setAttribute("data-theme",t);else if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="toolkit">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="strip">
+  <div class="wrap">
+    <span class="strip__batch"><span class="dot" aria-hidden="true"></span><b data-cfg="batch.status">Registration open</b><span data-cfg="batch.label">May/June 2027 batch</span></span>
+    <span class="strip__right">
+      <a data-wa="Assalam-o-Alaikum Sir Suhail, I’d like to know about the May/June 2027 batch.">WhatsApp <span data-cfg="contact.phone">+92 321 2592025</span></a>
+      <a data-ig href="#">@chemwithsuhail</a>
+    </span>
+  </div>
+</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="SAZ — Sir Suhail Aziz, home">
+      <img class="logo-light" src="images/saz-logo.png" alt="SAZ — Sir Suhail Aziz" width="379" height="165">
+      <img class="logo-dark" src="images/saz-logo-light.png" alt="SAZ — Sir Suhail Aziz" width="322" height="147">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html#teaching">How he teaches</a></li>
+        <li><a href="index.html#course">The course</a></li>
+        <li><a href="index.html#classes">Classes</a></li>
+        <li><a href="syllabus.html">Syllabus tracker</a></li>
+        <li><a href="toolkit.html" aria-current="page">Toolkit</a></li>
+      </ul>
+    </nav>
+    <div class="bar__actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+      <a class="btn btn--primary btn--sm bar__register" href="index.html#register">Register</a>
+      <button class="icon-btn menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="index.html#teaching">How he teaches</a></li>
+      <li><a href="index.html#course">The course</a></li>
+      <li><a href="index.html#classes">Classes</a></li>
+      <li><a href="syllabus.html">Syllabus tracker</a></li>
+      <li><a href="toolkit.html" aria-current="page">Toolkit</a></li>
+    </ul>
+    <a class="btn btn--primary" href="index.html#register">Register now</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="pagehead" style="border-bottom:0; padding-bottom: var(--space-xl)">
+    <div class="wrap">
+      <div class="codes"><span>Free</span><span>For <b>9701</b> students</span></div>
+      <h1 style="margin-top: var(--space-lg)">Chemistry <span class="o">toolkit</span></h1>
+      <p>A periodic table, electronic configurations, an M<sub>r</sub> calculator and the mole calculations that come up in every paper. Each one shows its working, so you can check yours.</p>
+    </div>
+  </section>
+
+  <nav class="toolnav" aria-label="Tools">
+    <div class="wrap">
+      <ul>
+        <li><a href="#periodic" class="is-active">Periodic table</a></li>
+        <li><a href="#econfig">Electronic configuration</a></li>
+        <li><a href="#mr"><span>M<sub>r</sub> calculator</span></a></li>
+        <li><a href="#moles">Mole calculators</a></li>
+        <li><a href="#constants">Constants</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PERIODIC TABLE -->
+  <section class="tool" id="periodic" aria-labelledby="pt-title">
+    <div class="wrap">
+      <div class="tool__head">
+        <h2 id="pt-title">Periodic <span class="o">table</span></h2>
+        <p>Tap an element for its details. Relative atomic masses are given to one decimal place, the precision 9701 papers use. Filter by type, or search by name, symbol or atomic number.</p>
+      </div>
+      <div class="pt-tools">
+        <input class="input" id="pt-q" type="search" placeholder="Search: Fe, sodium, 17…" aria-label="Search elements" autocomplete="off">
+        <div class="pt-legend" id="pt-legend" role="group" aria-label="Highlight a type of element"></div>
+      </div>
+      <div class="pt-layout">
+        <div>
+          <div class="pt-scroll"><div class="ptable" id="ptable"></div></div>
+          <p class="pt-hint">Scroll the table sideways to see every group.</p>
+        </div>
+        <aside class="el-card" id="el-card" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELECTRONIC CONFIGURATION -->
+  <section class="tool" id="econfig" aria-labelledby="ec-title">
+    <div class="wrap">
+      <div class="tool__head">
+        <h2 id="ec-title">Electronic <span class="o">configuration</span></h2>
+        <p>Full and shorthand configurations with electrons in boxes, for atoms and ions from hydrogen to krypton — the range the syllabus assesses.</p>
+      </div>
+      <div class="calc calc--split">
+        <div class="box">
+          <div class="field">
+            <label for="ec-el">Element</label>
+            <select class="select" id="ec-el"></select>
+          </div>
+          <div class="field">
+            <label for="ec-charge">Charge on the ion <small>(0 for an atom)</small></label>
+            <input class="input input--mono" id="ec-charge" type="number" min="-3" max="7" step="1" value="0" inputmode="numeric">
+          </div>
+          <div class="examples"><span>Try</span>
+            <button class="chip" type="button" data-ec="26,2">Fe²⁺</button>
+            <button class="chip" type="button" data-ec="26,3">Fe³⁺</button>
+            <button class="chip" type="button" data-ec="24,0">Cr</button>
+            <button class="chip" type="button" data-ec="29,0">Cu</button>
+            <button class="chip" type="button" data-ec="29,2">Cu²⁺</button>
+            <button class="chip" type="button" data-ec="8,-2">O²⁻</button>
+            <button class="chip" type="button" data-ec="17,-1">Cl⁻</button>
+          </div>
+        </div>
+        <div class="box box--accent econf-out" id="ec-out" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MR -->
+  <section class="tool" id="mr" aria-labelledby="mr-title">
+    <div class="wrap">
+      <div class="tool__head">
+        <h2 id="mr-title">M<sub>r</sub> <span class="o">calculator</span></h2>
+        <p>Type any formula. Brackets, square brackets and hydrates (use a dot: CuSO4.5H2O) all work. You get the relative formula mass and the percentage by mass of each element.</p>
+      </div>
+      <div class="calc calc--split">
+        <div class="box">
+          <div class="field">
+            <label for="mr-in">Formula</label>
+            <input class="input input--mono" id="mr-in" autocomplete="off" autocapitalize="off" spellcheck="false" style="font-size: var(--text-xl)">
+            <small>Capitals matter: Co is cobalt, CO is carbon monoxide.</small>
+          </div>
+          <div class="examples"><span>Try</span>
+            <button class="chip" type="button" data-mr="KMnO4">KMnO₄</button>
+            <button class="chip" type="button" data-mr="Ca(OH)2">Ca(OH)₂</button>
+            <button class="chip" type="button" data-mr="(NH4)2SO4">(NH₄)₂SO₄</button>
+            <button class="chip" type="button" data-mr="C6H12O6">C₆H₁₂O₆</button>
+            <button class="chip" type="button" data-mr="K4[Fe(CN)6]">K₄[Fe(CN)₆]</button>
+            <button class="chip" type="button" data-mr="Na2CO3.10H2O">Na₂CO₃·10H₂O</button>
+          </div>
+        </div>
+        <div class="box box--accent" id="mr-out" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOLES -->
+  <section class="tool" id="moles" aria-labelledby="mo-title">
+    <div class="wrap">
+      <div class="tool__head">
+        <h2 id="mo-title">Mole <span class="o">calculators</span></h2>
+        <p>Fill in every box except the one you want, and the answer appears with its working. Numbers like 1.74e-5 work for powers of ten.</p>
+      </div>
+      <div class="calc">
+        <div style="display:flex; flex-wrap:wrap; gap: var(--space-md); align-items:center; justify-content:space-between">
+          <div class="tabs" role="tablist" aria-label="Calculators">
+            <button type="button" role="tab" id="tab-mm" aria-controls="p-mm" aria-selected="true">Mass &amp; moles</button>
+            <button type="button" role="tab" id="tab-so" aria-controls="p-so" aria-selected="false" tabindex="-1">Solutions</button>
+            <button type="button" role="tab" id="tab-ga" aria-controls="p-ga" aria-selected="false" tabindex="-1">Gases</button>
+            <button type="button" role="tab" id="tab-ph" aria-controls="p-ph" aria-selected="false" tabindex="-1">pH</button>
+            <button type="button" role="tab" id="tab-el" aria-controls="p-el" aria-selected="false" tabindex="-1">Electrolysis</button>
+          </div>
+          <div class="solve-for" role="group" aria-label="Significant figures"><span>Answer to</span>
+            <button class="chip" type="button" data-sf="2" aria-pressed="false">2 s.f.</button>
+            <button class="chip" type="button" data-sf="3" aria-pressed="true">3 s.f.</button>
+            <button class="chip" type="button" data-sf="4" aria-pressed="false">4 s.f.</button>
+          </div>
+        </div>
+
+        <!-- mass & moles -->
+        <div class="tabpanel calc calc--split" role="tabpanel" id="p-mm" aria-labelledby="tab-mm">
+          <div class="box">
+            <p class="fineprint">n = m ÷ M<sub>r</sub>. M<sub>r</sub> fills in from the calculator above.</p>
+            <div class="grid-fields">
+              <div class="field"><label for="mm-m">Mass, m <small>(g)</small></label><input class="input input--mono calc-input" id="mm-m" inputmode="decimal" autocomplete="off"></div>
+              <div class="field"><label for="mm-n">Amount, n <small>(mol)</small></label><input class="input input--mono calc-input" id="mm-n" inputmode="decimal" autocomplete="off"></div>
+              <div class="field"><label for="mm-mr">M<sub>r</sub> <small>(g mol<sup>−1</sup>)</small></label><input class="input input--mono calc-input" id="mm-mr" inputmode="decimal" autocomplete="off"></div>
+            </div>
+            <div class="examples"><span>Example</span>
+              <button class="chip" type="button" data-fill='{"mm-m":"12.48","mm-n":"","mm-mr":"249.6"}'>12.48 g of CuSO₄·5H₂O</button>
+              <button class="chip" type="button" data-fill='{"mm-m":"","mm-n":"0.250","mm-mr":"58.5"}'>0.250 mol of NaCl</button>
+            </div>
+          </div>
+          <div class="result" id="mm-out" aria-live="polite"></div>
+        </div>
+
+        <!-- solutions -->
+        <div class="tabpanel calc calc--split" role="tabpanel" id="p-so" aria-labelledby="tab-so" hidden>
+          <div class="box">
+            <p class="fineprint">c = n ÷ V, with V in dm<sup>3</sup>. Volumes in cm<sup>3</sup> are divided by 1000 for you.</p>
+            <div class="grid-fields">
+              <div class="field"><label for="so-c">Concentration, c <small>(mol dm<sup>−3</sup>)</small></label><input class="input input--mono calc-input" id="so-c" inputmode="decimal" autocomplete="off"></div>
+              <div class="field"><label for="so-n">Amount, n <small>(mol)</small></label><input class="input input--mono calc-input" id="so-n" inputmode="decimal" autocomplete="off"></div>
+              <div class="field"><label for="so-v">Volume, V</label>
+                <div class="inline-unit"><input class="input input--mono calc-input" id="so-v" inputmode="decimal" autocomplete="off"><select class="select calc-input" id="so-vu" aria-label="Volume unit"><option value="cm3">cm³</option><option value="dm3">dm³</option></select></div>
+              </div>
+            </div>
+            <div class="examples"><span>Example</span>
+              <button class="chip" type="button" data-fill='{"so-c":"0.100","so-n":"","so-v":"25.0","so-vu":"cm3"}'>25.0 cm³ of 0.100 mol dm⁻³</button>
+              <button class="chip" type="button" data-fill='{"so-c":"","so-n":"0.00215","so-v":"21.50","so-vu":"cm3"}'>Titre: 0.00215 mol in 21.50 cm³</button>
+            </div>
+          </div>
+          <div class="result" id="so-out" aria-live="polite"></div>
+        </div>
+
+        <!-- gases -->
+        <div class="tabpanel calc calc--split" role="tabpanel" id="p-ga" aria-labelledby="tab-ga" hidden>
+          <div class="box">
+            <p class="fineprint">pV = nRT with R = 8.31 J K<sup>−1</sup> mol<sup>−1</sup>. Units are converted to Pa, m<sup>3</sup> and K for you.</p>
+            <div class="grid-fields">
+              <div class="field"><label for="ga-p">Pressure, p</label>
+                <div class="inline-unit"><input class="input input--mono calc-input" id="ga-p" inputmode="decimal" autocomplete="off"><select class="select calc-input" id="ga-pu" aria-label="Pressure unit"><option value="kPa">kPa</option><option value="Pa">Pa</option></select></div></div>
+              <div class="field"><label for="ga-v">Volume, V</label>
+                <div class="inline-unit"><input class="input input--mono calc-input" id="ga-v" inputmode="decimal" autocomplete="off"><select class="select calc-input" id="ga-vu" aria-label="Volume unit"><option value="dm3">dm³</option><option value="cm3">cm³</option><option value="m3">m³</option></select></div></div>
+              <div class="field"><label for="ga-n">Amount, n <small>(mol)</small></label><input class="input input--mono calc-input" id="ga-n" inputmode="decimal" autocomplete="off"></div>
+              <div class="field"><label for="ga-t">Temperature, T</label>
+                <div class="inline-unit"><input class="input input--mono calc-input" id="ga-t" inputmode="decimal" autocomplete="off"><select class="select calc-input" id="ga-tu" aria-label="Temperature unit"><option value="K">K</option><option value="C">°C</option></select></div></div>
+            </div>
+            <div class="examples"><span>Example</span>
+              <button class="chip" type="button" data-fill='{"ga-p":"101","ga-pu":"kPa","ga-v":"","ga-vu":"dm3","ga-n":"1","ga-t":"298","ga-tu":"K"}'>1 mol at 298 K, 101 kPa</button>
+              <button class="chip" type="button" data-fill='{"ga-p":"100","ga-pu":"kPa","ga-v":"240","ga-vu":"cm3","ga-n":"","ga-t":"25","ga-tu":"C"}'>240 cm³ at 25 °C, 100 kPa</button>
+            </div>
+          </div>
+          <div class="result" id="ga-out" aria-live="polite"></div>
+        </div>
+
+        <!-- pH -->
+        <div class="tabpanel calc calc--split" role="tabpanel" id="p-ph" aria-labelledby="tab-ph" hidden>
+          <div class="box">
+            <div class="field"><label for="ph-mode">Solution</label>
+              <select class="select calc-input" id="ph-mode">
+                <option value="strongacid">Strong acid</option>
+                <option value="strongbase">Strong alkali</option>
+                <option value="weak">Weak acid (uses Ka)</option>
+                <option value="fromph">[H⁺] from a pH</option>
+              </select>
+            </div>
+            <div class="grid-fields">
+              <div class="field"><label for="ph-c" id="ph-c-label">Concentration, c <small>(mol dm<sup>−3</sup>)</small></label><input class="input input--mono calc-input" id="ph-c" inputmode="decimal" autocomplete="off"></div>
+              <div class="field" id="ph-b-field"><label for="ph-b">H⁺ or OH⁻ per formula</label><select class="select calc-input" id="ph-b"><option value="1">1 (HCl, NaOH)</option><option value="2">2 (Ba(OH)₂)</option></select></div>
+              <div class="field" id="ph-k-field" hidden><label for="ph-k">K<sub>a</sub> <small>(mol dm<sup>−3</sup>)</small></label><input class="input input--mono calc-input" id="ph-k" inputmode="decimal" autocomplete="off" placeholder="e.g. 1.74e-5"></div>
+            </div>
+            <div class="examples"><span>Example</span>
+              <button class="chip" type="button" data-fill='{"ph-mode":"strongacid","ph-c":"0.0100","ph-b":"1"}'>0.0100 mol dm⁻³ HCl</button>
+              <button class="chip" type="button" data-fill='{"ph-mode":"strongbase","ph-c":"0.0500","ph-b":"1"}'>0.0500 mol dm⁻³ NaOH</button>
+              <button class="chip" type="button" data-fill='{"ph-mode":"weak","ph-c":"0.100","ph-k":"1.74e-5"}'>0.100 mol dm⁻³ ethanoic acid</button>
+            </div>
+            <p class="fineprint">Strong alkalis use K<sub>w</sub> = 1.00 × 10<sup>−14</sup> mol<sup>2</sup> dm<sup>−6</sup>, its value at 298 K.</p>
+          </div>
+          <div class="result" id="ph-out" aria-live="polite"></div>
+        </div>
+
+        <!-- electrolysis -->
+        <div class="tabpanel calc calc--split" role="tabpanel" id="p-el" aria-labelledby="tab-el" hidden>
+          <div class="box">
+            <p class="fineprint">Q = It, then moles of electrons = Q ÷ F, with F = 96 500 C mol<sup>−1</sup>.</p>
+            <div class="grid-fields">
+              <div class="field"><label for="el-i">Current, I <small>(A)</small></label><input class="input input--mono calc-input" id="el-i" inputmode="decimal" autocomplete="off"></div>
+              <div class="field"><label for="el-t">Time, t</label>
+                <div class="inline-unit"><input class="input input--mono calc-input" id="el-t" inputmode="decimal" autocomplete="off"><select class="select calc-input" id="el-tu" aria-label="Time unit"><option value="s">s</option><option value="min">min</option><option value="h">h</option></select></div></div>
+              <div class="field"><label for="el-z">Electrons per particle formed <small>(optional)</small></label><input class="input input--mono calc-input" id="el-z" inputmode="numeric" autocomplete="off" placeholder="Cu²⁺ → Cu: 2"></div>
+              <div class="field"><label for="el-sym">Product formula <small>(optional)</small></label><input class="input input--mono calc-input" id="el-sym" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Cu, Cl2, H2…"></div>
+            </div>
+            <label class="toggle"><input type="checkbox" class="calc-input" id="el-gas"> Product is a gas — give its volume at room conditions</label>
+            <div class="examples"><span>Example</span>
+              <button class="chip" type="button" data-fill='{"el-i":"0.500","el-t":"30","el-tu":"min","el-z":"2","el-sym":"Cu","el-gas":false}'>0.500 A for 30 min, copper</button>
+              <button class="chip" type="button" data-fill='{"el-i":"2.00","el-t":"1","el-tu":"h","el-z":"2","el-sym":"Cl2","el-gas":true}'>2.00 A for 1 h, chlorine</button>
+            </div>
+          </div>
+          <div class="result" id="el-out" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSTANTS -->
+  <section class="tool" id="constants" aria-labelledby="co-title" style="border-bottom:0">
+    <div class="wrap">
+      <div class="tool__head">
+        <h2 id="co-title">Useful <span class="o">constants</span></h2>
+        <p>The standard values these calculators use. In the exam, always use the values printed in your paper.</p>
+      </div>
+      <div class="tbl-wrap">
+        <table class="consts">
+          <thead><tr><th>Quantity</th><th>Symbol</th><th>Value</th><th>Unit</th></tr></thead>
+          <tbody id="consts-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot on-dark">
+  <div class="wrap">
+    <p class="foot__statement"><span>Good chemistry.</span><span class="o">Brighter futures.</span></p>
+    <div class="foot__row">
+      <a class="foot__brand" href="index.html"><img src="images/saz-logo-light.png" alt="SAZ — Sir Suhail Aziz" width="322" height="147"></a>
+      <ul class="foot__links">
+        <li><a href="index.html#teaching">How he teaches</a></li>
+        <li><a href="index.html#course">The course</a></li>
+        <li><a href="index.html#classes">Classes</a></li>
+        <li><a href="syllabus.html">Syllabus tracker</a></li>
+        <li><a href="toolkit.html">Toolkit</a></li>
+        <li><a href="index.html#register">Register</a></li>
+      </ul>
+      <div class="socials" data-render="socials"></div>
+    </div>
+    <div class="foot__small">
+      <p>© <span data-year>2026</span> Sir Suhail Aziz · SAZ. Syllabus details are summarised from Cambridge International’s published 9701 syllabus. This site is not affiliated with or endorsed by Cambridge University Press &amp; Assessment.</p>
+      <p>Website by <a href="https://nexlyr.solutions" target="_blank" rel="noopener">Nexlyr Solutions</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
